@@ -1,0 +1,9 @@
+.Humidity,
+.wind {
+  list-style: none;
+  color: #70757a;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 10px;
+}

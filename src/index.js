@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Weather from "./weather";
 import reportWebVitals from "./reportWebVitals";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import Form from "./form";
 import Results from "./results";
 import Date from "./date";
+import Forecast from "./forecast";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -23,18 +24,9 @@ root.render(
             <Date />
           </div>
         </div>
-        <div class="row my-3">
-          <div class="col-4">
-            <div className="info">Wind Humidity</div>
-          </div>
-          <div class="col-4">
-            <div className="temp">Temp 19</div>
-          </div>
-          <div class="col-4">Sun</div>
-        </div>
+        <Forecast />
       </div>
     </div>
-    <Weather />
   </React.StrictMode>
 );
 reportWebVitals();

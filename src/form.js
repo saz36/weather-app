@@ -1,6 +1,6 @@
-
 import React, { useState } from "react";
 import axios from "axios";
+import "./form.css";
 
 export default function Form() {
   const [city, setCity] = useState("");
@@ -32,8 +32,27 @@ export default function Form() {
   }
   let form = (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Type your city" onChange={updateCity} />
-      <input type="submit" value="search" />
+      <div class="row">
+        <div class="col-7">
+          <input
+            type="text"
+            placeholder="Enter your location"
+            autocomplete="off"
+            autofocus
+            class="form-control"
+            onChange={updateCity}
+          />
+        </div>
+
+        <div class="col-2">
+          <input type="submit" value="search" class="btn btn-primary" />
+        </div>
+        <div class="col-2">
+          <button id="locate" class="btn btn-primary">
+            location
+          </button>
+        </div>
+      </div>
     </form>
   );
   if (display) {
