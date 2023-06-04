@@ -10,9 +10,8 @@
   color: #0c66eb;
   font-size: 52px;
 }
-.info {
-  list-style: none;
-  color: #70757a;
-  text-align: justify;
-  font-size: 14px;
+.date,
+.results {
+  margin-left: 10px;
+  text-align: center;
 }
