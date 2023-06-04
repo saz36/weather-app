@@ -1,0 +1,18 @@
+.weather-app {
+  max-width: 600px;
+  margin-top: 50px;
+  margin-left: 40px;
+  padding-left: 40px;
+  border: 1px solid #dadce0;
+}
+.weather-app h1 {
+  text-align: center;
+  color: #0c66eb;
+  font-size: 52px;
+}
+.info {
+  list-style: none;
+  color: #70757a;
+  text-align: justify;
+  font-size: 14px;
+}
