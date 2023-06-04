@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+
 import Form from "./form";
 import Results from "./results";
 import Date from "./date";
@@ -12,15 +12,15 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="weather-app">
-      <div class="container">
+      <div className="container">
         <h1>weather</h1>
 
         <Form />
-        <div class="row my-4 ">
-          <div class="col-5">
+        <div className="row my-4 ">
+          <div className="col-5 mx-2">
             <Results />
           </div>
-          <div class="col-5">
+          <div className="col-5 mx-2">
             <Date />
           </div>
         </div>

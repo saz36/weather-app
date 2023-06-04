@@ -32,23 +32,24 @@ export default function Form() {
   }
   let form = (
     <form onSubmit={handleSubmit}>
-      <div class="row">
-        <div class="col-7">
+      <div className="row">
+        <div className="col-7">
           <input
+            id="data-input"
             type="text"
             placeholder="Enter your location"
-            autocomplete="off"
-            autofocus
-            class="form-control"
+            autoComplete="off"
+            autoFocus
+            className="form-control"
             onChange={updateCity}
           />
         </div>
 
-        <div class="col-2">
-          <input type="submit" value="search" class="btn btn-primary" />
+        <div className="col-2">
+          <input type="submit" value="search" className="btn btn-primary" />
         </div>
-        <div class="col-2">
-          <button id="locate" class="btn btn-primary">
+        <div className="col-2">
+          <button id="locate" className="btn btn-primary">
             location
           </button>
         </div>
