@@ -27,6 +27,15 @@ root.render(
         <Forecast />
       </div>
     </div>
+    <div>
+      <a
+        href="https://github.com/saz36/weather-app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        open source code
+      </a>
+    </div>
   </React.StrictMode>
 );
 reportWebVitals();
